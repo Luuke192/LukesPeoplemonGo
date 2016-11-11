@@ -109,32 +109,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         timer?.invalidate()
         timer = nil
     }
-    func ResizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
-        let size = image.size
-        
-        let widthRatio  = targetSize.width  / image.size.width
-        let heightRatio = targetSize.height / image.size.height
-        
-        // Figure out what our orientation is, and use that to form the rectangle
-        var newSize: CGSize
-        if(widthRatio > heightRatio) {
-            newSize = CGSize(width: size.width, height: size.height)
-        } else {
-            newSize = CGSize(width: size.width, height: size.height)
-        }
-        
-        // This is the rect that we've calculated out and this is what is actually used below
-        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-        
-        // Actually do the resizing to the rect using the ImageContext stuff
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        image.draw(in: rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage!
-    }
-    
     
     //Mark - @IBActions
     @IBAction func logout(_ sender: Any) {
@@ -168,6 +142,7 @@ extension MapViewController: MKMapViewDelegate {
                     pinView?.contentMode = .scaleToFill
                     pinView?.clipsToBounds = false
                     pinView?.layer.borderWidth = 2
+                    pinView?.layer.shadowRadius = 5
                     pinView?.layer.borderColor = UIColor(red: 0, green: 0, blue: 1, alpha: 1).cgColor
                 } else {
                     pinView?.image = nil

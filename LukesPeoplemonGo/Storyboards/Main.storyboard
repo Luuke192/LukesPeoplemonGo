@@ -155,10 +155,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Yaq-Iu-1x8">
-                                <rect key="frame" x="84" y="28" width="207" height="200"/>
+                                <rect key="frame" x="84" y="72" width="207" height="215"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Change Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-ky-kFz">
-                                <rect key="frame" x="16" y="246" width="343" height="55"/>
+                                <rect key="frame" x="16" y="295" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="j3F-bh-ilb"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -166,13 +169,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qUA-ky-kFz" firstAttribute="leading" secondItem="SON-jp-ZPL" secondAttribute="leadingMargin" id="EdT-Aa-TDF"/>
-                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="top" secondItem="FHd-bd-d5q" secondAttribute="bottom" constant="8" symbolic="YES" id="L5y-W0-9Ez"/>
-                            <constraint firstItem="qUA-ky-kFz" firstAttribute="top" secondItem="Yaq-Iu-1x8" secondAttribute="bottom" constant="18" id="leM-m8-R4d"/>
-                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="centerX" secondItem="qUA-ky-kFz" secondAttribute="centerX" id="oef-Tb-Wff"/>
-                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="leading" secondItem="SON-jp-ZPL" secondAttribute="leadingMargin" constant="68" id="wBO-ld-dvU"/>
-                            <constraint firstItem="qUA-ky-kFz" firstAttribute="trailing" secondItem="SON-jp-ZPL" secondAttribute="trailingMargin" id="wjZ-Bt-FY8"/>
-                            <constraint firstItem="78x-F3-tPb" firstAttribute="top" secondItem="qUA-ky-kFz" secondAttribute="bottom" constant="366" id="wkJ-bk-MDT"/>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="top" secondItem="Yaq-Iu-1x8" secondAttribute="bottom" constant="8" symbolic="YES" id="3Tw-AS-CPe"/>
+                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="leading" secondItem="SON-jp-ZPL" secondAttribute="leadingMargin" constant="68" id="7Il-yc-S3V"/>
+                            <constraint firstItem="78x-F3-tPb" firstAttribute="top" secondItem="qUA-ky-kFz" secondAttribute="bottom" constant="332" id="JkZ-XD-TTZ"/>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="centerX" secondItem="Yaq-Iu-1x8" secondAttribute="centerX" id="aYZ-B6-Yx3"/>
+                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="top" secondItem="SON-jp-ZPL" secondAttribute="topMargin" constant="72" id="amA-Mb-9U9"/>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="trailing" secondItem="SON-jp-ZPL" secondAttribute="trailingMargin" id="b3v-KB-wMF"/>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="leading" secondItem="SON-jp-ZPL" secondAttribute="leadingMargin" id="yt0-8r-Kal"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="User Profile" id="o7G-J8-WT8">
@@ -229,7 +232,7 @@
         <image name="defaultIcon" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="kXf-os-dlU"/>
         <segue reference="ksU-34-zuS"/>
-        <segue reference="TNb-d5-nBW"/>
     </inferredMetricsTieBreakers>
 </document>

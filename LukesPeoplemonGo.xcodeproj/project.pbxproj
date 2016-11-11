@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10A031E0B6A306C55FE41EF /* Pods_LukesPeoplemonGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FFDC27C4049DD460FBC77D /* Pods_LukesPeoplemonGo.framework */; };
+		E48017781DD21DA200FBB52C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48017771DD21DA200FBB52C /* AppDelegate.swift */; };
+		E48017821DD21DA200FBB52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48017801DD21DA200FBB52C /* LaunchScreen.storyboard */; };
+		E49CB67E1DD2233000819FFD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49CB67D1DD2233000819FFD /* Login.storyboard */; };
+		E49CB6801DD2236F00819FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49CB67F1DD2236F00819FFD /* Main.storyboard */; };
+		E49CB6831DD2240300819FFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6821DD2240300819FFD /* LoginViewController.swift */; };
+		E49CB6861DD2250500819FFD /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6851DD2250500819FFD /* UserStore.swift */; };
+		E49CB6881DD2253A00819FFD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6871DD2253A00819FFD /* Utils.swift */; };
+		E49CB68B1DD2273500819FFD /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB68A1DD2273500819FFD /* NetworkModel.swift */; };
+		E49CB68D1DD2277E00819FFD /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB68C1DD2277E00819FFD /* WebServices.swift */; };
+		E49CB68F1DD227DE00819FFD /* WebServicesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB68E1DD227DE00819FFD /* WebServicesExtension.swift */; };
+		E49CB6911DD2281F00819FFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6901DD2281F00819FFD /* Constants.swift */; };
+		E49CB6941DD22B0700819FFD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6931DD22B0700819FFD /* User.swift */; };
+		E49CB6961DD259CB00819FFD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6951DD259CB00819FFD /* MapViewController.swift */; };
+		E49CB69A1DD2605100819FFD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6991DD2605100819FFD /* RegisterViewController.swift */; };
+		E49CB6A01DD2BC7C00819FFD /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB69F1DD2BC7C00819FFD /* UserProfileViewController.swift */; };
+		E49CB6A21DD2BCA100819FFD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49CB6A11DD2BCA100819FFD /* Person.swift */; };
+		E4EC5FFA1DD55FC80020F4CA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC5FF91DD55FC80020F4CA /* UserProfile.swift */; };
+		E4EC5FFC1DD560330020F4CA /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC5FFB1DD560330020F4CA /* MapPin.swift */; };
+		E4EC5FFE1DD560670020F4CA /* CaughtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC5FFD1DD560670020F4CA /* CaughtTableViewCell.swift */; };
+		E4EC60001DD560970020F4CA /* CaughtTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC5FFF1DD560970020F4CA /* CaughtTableViewController.swift */; };
+		E4F58F931DD65A8500C0C1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F58F921DD65A8500C0C1B2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76FFDC27C4049DD460FBC77D /* Pods_LukesPeoplemonGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LukesPeoplemonGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DE2BE950154BE1FB814FFC /* Pods-LukesPeoplemonGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LukesPeoplemonGo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LukesPeoplemonGo/Pods-LukesPeoplemonGo.release.xcconfig"; sourceTree = "<group>"; };
+		8C17FBEA53C92AD64C152711 /* Pods-LukesPeoplemonGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LukesPeoplemonGo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LukesPeoplemonGo/Pods-LukesPeoplemonGo.debug.xcconfig"; sourceTree = "<group>"; };
+		E48017741DD21DA200FBB52C /* LukesPeoplemonGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LukesPeoplemonGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48017771DD21DA200FBB52C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E48017811DD21DA200FBB52C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E48017831DD21DA200FBB52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49CB67D1DD2233000819FFD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		E49CB67F1DD2236F00819FFD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		E49CB6821DD2240300819FFD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		E49CB6851DD2250500819FFD /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserStore.swift; path = Components/UserStore.swift; sourceTree = "<group>"; };
+		E49CB6871DD2253A00819FFD /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Components/Utils.swift; sourceTree = "<group>"; };
+		E49CB68A1DD2273500819FFD /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
+		E49CB68C1DD2277E00819FFD /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServices.swift; path = Networking/WebServices.swift; sourceTree = "<group>"; };
+		E49CB68E1DD227DE00819FFD /* WebServicesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServicesExtension.swift; path = Networking/WebServicesExtension.swift; sourceTree = "<group>"; };
+		E49CB6901DD2281F00819FFD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Components/Constants.swift; sourceTree = "<group>"; };
+		E49CB6931DD22B0700819FFD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		E49CB6951DD259CB00819FFD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ViewControllers/MapViewController.swift; sourceTree = "<group>"; };
+		E49CB6991DD2605100819FFD /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ViewControllers/RegisterViewController.swift; sourceTree = "<group>"; };
+		E49CB69C1DD2BBCF00819FFD /* LukesPeoplemonGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LukesPeoplemonGo.entitlements; sourceTree = "<group>"; };
+		E49CB69F1DD2BC7C00819FFD /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfileViewController.swift; path = ViewControllers/UserProfileViewController.swift; sourceTree = "<group>"; };
+		E49CB6A11DD2BCA100819FFD /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
+		E4EC5FF91DD55FC80020F4CA /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = Components/UserProfile.swift; sourceTree = "<group>"; };
+		E4EC5FFB1DD560330020F4CA /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPin.swift; path = Components/MapPin.swift; sourceTree = "<group>"; };
+		E4EC5FFD1DD560670020F4CA /* CaughtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaughtTableViewCell.swift; path = Components/CaughtTableViewCell.swift; sourceTree = "<group>"; };
+		E4EC5FFF1DD560970020F4CA /* CaughtTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaughtTableViewController.swift; path = ViewControllers/CaughtTableViewController.swift; sourceTree = "<group>"; };
+		E4F58F921DD65A8500C0C1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E48017711DD21DA200FBB52C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10A031E0B6A306C55FE41EF /* Pods_LukesPeoplemonGo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25D0E0C0C53CE681CADCB8A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C17FBEA53C92AD64C152711 /* Pods-LukesPeoplemonGo.debug.xcconfig */,
+				84DE2BE950154BE1FB814FFC /* Pods-LukesPeoplemonGo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		811D42C14F37B7756D3A6CCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76FFDC27C4049DD460FBC77D /* Pods_LukesPeoplemonGo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E480176B1DD21DA200FBB52C = {
+			isa = PBXGroup;
+			children = (
+				E48017761DD21DA200FBB52C /* LukesPeoplemonGo */,
+				E48017751DD21DA200FBB52C /* Products */,
+				25D0E0C0C53CE681CADCB8A3 /* Pods */,
+				811D42C14F37B7756D3A6CCC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E48017751DD21DA200FBB52C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E48017741DD21DA200FBB52C /* LukesPeoplemonGo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E48017761DD21DA200FBB52C /* LukesPeoplemonGo */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB6841DD224D400819FFD /* Components */,
+				E49CB6921DD22AE100819FFD /* Models */,
+				E49CB6891DD2271100819FFD /* Networking */,
+				E49CB67C1DD222E800819FFD /* Storyboards */,
+				E49CB6811DD2239F00819FFD /* ViewControllers */,
+				E48017771DD21DA200FBB52C /* AppDelegate.swift */,
+				E4F58F921DD65A8500C0C1B2 /* Assets.xcassets */,
+				E48017831DD21DA200FBB52C /* Info.plist */,
+				E48017801DD21DA200FBB52C /* LaunchScreen.storyboard */,
+				E49CB69C1DD2BBCF00819FFD /* LukesPeoplemonGo.entitlements */,
+			);
+			path = LukesPeoplemonGo;
+			sourceTree = "<group>";
+		};
+		E49CB67C1DD222E800819FFD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB67D1DD2233000819FFD /* Login.storyboard */,
+				E49CB67F1DD2236F00819FFD /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E49CB6811DD2239F00819FFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB6821DD2240300819FFD /* LoginViewController.swift */,
+				E49CB6951DD259CB00819FFD /* MapViewController.swift */,
+				E49CB6991DD2605100819FFD /* RegisterViewController.swift */,
+				E49CB69F1DD2BC7C00819FFD /* UserProfileViewController.swift */,
+				E4EC5FFF1DD560970020F4CA /* CaughtTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E49CB6841DD224D400819FFD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB6901DD2281F00819FFD /* Constants.swift */,
+				E49CB6851DD2250500819FFD /* UserStore.swift */,
+				E49CB6871DD2253A00819FFD /* Utils.swift */,
+				E4EC5FF91DD55FC80020F4CA /* UserProfile.swift */,
+				E4EC5FFB1DD560330020F4CA /* MapPin.swift */,
+				E4EC5FFD1DD560670020F4CA /* CaughtTableViewCell.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		E49CB6891DD2271100819FFD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB68A1DD2273500819FFD /* NetworkModel.swift */,
+				E49CB68C1DD2277E00819FFD /* WebServices.swift */,
+				E49CB68E1DD227DE00819FFD /* WebServicesExtension.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E49CB6921DD22AE100819FFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E49CB6931DD22B0700819FFD /* User.swift */,
+				E49CB6A11DD2BCA100819FFD /* Person.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E48017731DD21DA200FBB52C /* LukesPeoplemonGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E48017861DD21DA200FBB52C /* Build configuration list for PBXNativeTarget "LukesPeoplemonGo" */;
+			buildPhases = (
+				E2AD8F62318962493C498339 /* [CP] Check Pods Manifest.lock */,
+				E48017701DD21DA200FBB52C /* Sources */,
+				E48017711DD21DA200FBB52C /* Frameworks */,
+				E48017721DD21DA200FBB52C /* Resources */,
+				12E301886739C4A99CE6E51E /* [CP] Embed Pods Frameworks */,
+				2C4ACF011F4EE30EBF555131 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LukesPeoplemonGo;
+			productName = LukesPeoplemonGo;
+			productReference = E48017741DD21DA200FBB52C /* LukesPeoplemonGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E480176C1DD21DA200FBB52C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Luuke192;
+				TargetAttributes = {
+					E48017731DD21DA200FBB52C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = LGU82C9CG3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E480176F1DD21DA200FBB52C /* Build configuration list for PBXProject "LukesPeoplemonGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E480176B1DD21DA200FBB52C;
+			productRefGroup = E48017751DD21DA200FBB52C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E48017731DD21DA200FBB52C /* LukesPeoplemonGo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E48017721DD21DA200FBB52C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49CB67E1DD2233000819FFD /* Login.storyboard in Resources */,
+				E48017821DD21DA200FBB52C /* LaunchScreen.storyboard in Resources */,
+				E4F58F931DD65A8500C0C1B2 /* Assets.xcassets in Resources */,
+				E49CB6801DD2236F00819FFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12E301886739C4A99CE6E51E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LukesPeoplemonGo/Pods-LukesPeoplemonGo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C4ACF011F4EE30EBF555131 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LukesPeoplemonGo/Pods-LukesPeoplemonGo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2AD8F62318962493C498339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E48017701DD21DA200FBB52C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49CB6861DD2250500819FFD /* UserStore.swift in Sources */,
+				E49CB6831DD2240300819FFD /* LoginViewController.swift in Sources */,
+				E4EC5FFA1DD55FC80020F4CA /* UserProfile.swift in Sources */,
+				E4EC5FFE1DD560670020F4CA /* CaughtTableViewCell.swift in Sources */,
+				E49CB68D1DD2277E00819FFD /* WebServices.swift in Sources */,
+				E49CB69A1DD2605100819FFD /* RegisterViewController.swift in Sources */,
+				E49CB6A21DD2BCA100819FFD /* Person.swift in Sources */,
+				E49CB6961DD259CB00819FFD /* MapViewController.swift in Sources */,
+				E4EC60001DD560970020F4CA /* CaughtTableViewController.swift in Sources */,
+				E49CB68F1DD227DE00819FFD /* WebServicesExtension.swift in Sources */,
+				E48017781DD21DA200FBB52C /* AppDelegate.swift in Sources */,
+				E49CB6941DD22B0700819FFD /* User.swift in Sources */,
+				E49CB6A01DD2BC7C00819FFD /* UserProfileViewController.swift in Sources */,
+				E4EC5FFC1DD560330020F4CA /* MapPin.swift in Sources */,
+				E49CB68B1DD2273500819FFD /* NetworkModel.swift in Sources */,
+				E49CB6881DD2253A00819FFD /* Utils.swift in Sources */,
+				E49CB6911DD2281F00819FFD /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E48017801DD21DA200FBB52C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E48017811DD21DA200FBB52C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E48017841DD21DA200FBB52C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E48017851DD21DA200FBB52C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E48017871DD21DA200FBB52C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C17FBEA53C92AD64C152711 /* Pods-LukesPeoplemonGo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LukesPeoplemonGo/LukesPeoplemonGo.entitlements;
+				DEVELOPMENT_TEAM = LGU82C9CG3;
+				INFOPLIST_FILE = LukesPeoplemonGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.LukesPeoplemonGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E48017881DD21DA200FBB52C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84DE2BE950154BE1FB814FFC /* Pods-LukesPeoplemonGo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LukesPeoplemonGo/LukesPeoplemonGo.entitlements;
+				DEVELOPMENT_TEAM = LGU82C9CG3;
+				INFOPLIST_FILE = LukesPeoplemonGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.interapt.LukesPeoplemonGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E480176F1DD21DA200FBB52C /* Build configuration list for PBXProject "LukesPeoplemonGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48017841DD21DA200FBB52C /* Debug */,
+				E48017851DD21DA200FBB52C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E48017861DD21DA200FBB52C /* Build configuration list for PBXNativeTarget "LukesPeoplemonGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E48017871DD21DA200FBB52C /* Debug */,
+				E48017881DD21DA200FBB52C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E480176C1DD21DA200FBB52C /* Project object */;
+}

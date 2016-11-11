@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y6N-nq-fA5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List of Caught People-->
+        <scene sceneID="t81-in-NUf">
+            <objects>
+                <tableViewController id="HWN-qq-5Lm" customClass="CaughtTableViewController" customModule="LukesPeoplemonGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" id="zTO-aX-WCb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CaughtTableViewCell" rowHeight="56" id="124-uS-Dut" customClass="CaughtTableViewCell" customModule="LukesPeoplemonGo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="124-uS-Dut" id="QdL-Nx-W7e">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKS-V3-JEy">
+                                            <rect key="frame" x="28" y="8" width="319" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hKS-V3-JEy" firstAttribute="leading" secondItem="QdL-Nx-W7e" secondAttribute="leading" constant="28" id="ETs-99-dTA"/>
+                                        <constraint firstAttribute="bottom" secondItem="hKS-V3-JEy" secondAttribute="bottom" constant="7.5" id="Fj9-pJ-rbb"/>
+                                        <constraint firstAttribute="trailing" secondItem="hKS-V3-JEy" secondAttribute="trailing" constant="28" id="YqQ-9S-bIk"/>
+                                        <constraint firstItem="hKS-V3-JEy" firstAttribute="top" secondItem="QdL-Nx-W7e" secondAttribute="top" constant="8" id="mCz-7a-jit"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="caughtLabel" destination="hKS-V3-JEy" id="1nd-bv-Lsy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HWN-qq-5Lm" id="rrC-Wd-Mb8"/>
+                            <outlet property="delegate" destination="HWN-qq-5Lm" id="TxL-C7-Nri"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="List of Caught People" id="gel-jy-8P4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="TU1-cd-iJp">
+                            <connections>
+                                <segue destination="2H9-st-XiQ" kind="show" id="TNb-d5-nBW">
+                                    <nil key="action"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0H-0r-4dM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543.20000000000005" y="-1737.481259370315"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z7F-Lu-L7F">
+            <objects>
+                <navigationController id="e22-Bs-SFJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kDE-lQ-Vk4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HWN-qq-5Lm" kind="relationship" relationship="rootViewController" id="DTh-OV-bu6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEj-Y8-dNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1335" y="-1737"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="79v-EH-XIv">
+            <objects>
+                <viewController id="2H9-st-XiQ" customClass="MapViewController" customModule="LukesPeoplemonGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bwk-Mv-haX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y26-Sm-2Kn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ffg-pr-5Zy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4lq-aG-cvw">
+                                <rect key="frame" x="-9" y="0.0" width="384" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l8w-MZ-kOX">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Logout" id="WaV-cE-Jef">
+                                <connections>
+                                    <action selector="logout:" destination="2H9-st-XiQ" id="4Bw-aa-7Pf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="CheckIn" id="Xq3-Bw-nIW">
+                                <connections>
+                                    <action selector="CheckIn:" destination="2H9-st-XiQ" id="mi2-IS-5UV"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem title="User Profile" id="e5A-cq-sOS">
+                                <connections>
+                                    <segue destination="0rD-Xs-3HC" kind="show" identifier="addUserProfile" id="qYd-SR-kUt">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem id="lbc-Vz-gzX">
+                                <string key="title">Caught
+</string>
+                                <connections>
+                                    <segue destination="e22-Bs-SFJ" kind="show" id="ATP-sh-Uv9">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="4lq-aG-cvw" id="fmI-OI-ox4"/>
+                        <segue destination="uU8-A4-TYj" kind="presentation" identifier="PresentLogin" id="ksU-34-zuS"/>
+                        <segue destination="uU8-A4-TYj" kind="presentation" identifier="PresentLoginNoAnimation" animates="NO" id="9xe-eq-Qu6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ug6-GY-Y1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2095.1999999999998" y="-963.86806596701661"/>
+        </scene>
+        <!--User Profile-->
+        <scene sceneID="mA9-Dt-7u5">
+            <objects>
+                <viewController id="0rD-Xs-3HC" customClass="UserProfileViewController" customModule="LukesPeoplemonGo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FHd-bd-d5q"/>
+                        <viewControllerLayoutGuide type="bottom" id="78x-F3-tPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SON-jp-ZPL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Yaq-Iu-1x8">
+                                <rect key="frame" x="84" y="28" width="207" height="200"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Change Full Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUA-ky-kFz">
+                                <rect key="frame" x="16" y="246" width="343" height="55"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="leading" secondItem="SON-jp-ZPL" secondAttribute="leadingMargin" id="EdT-Aa-TDF"/>
+                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="top" secondItem="FHd-bd-d5q" secondAttribute="bottom" constant="8" symbolic="YES" id="L5y-W0-9Ez"/>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="top" secondItem="Yaq-Iu-1x8" secondAttribute="bottom" constant="18" id="leM-m8-R4d"/>
+                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="centerX" secondItem="qUA-ky-kFz" secondAttribute="centerX" id="oef-Tb-Wff"/>
+                            <constraint firstItem="Yaq-Iu-1x8" firstAttribute="leading" secondItem="SON-jp-ZPL" secondAttribute="leadingMargin" constant="68" id="wBO-ld-dvU"/>
+                            <constraint firstItem="qUA-ky-kFz" firstAttribute="trailing" secondItem="SON-jp-ZPL" secondAttribute="trailingMargin" id="wjZ-Bt-FY8"/>
+                            <constraint firstItem="78x-F3-tPb" firstAttribute="top" secondItem="qUA-ky-kFz" secondAttribute="bottom" constant="366" id="wkJ-bk-MDT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="User Profile" id="o7G-J8-WT8">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="save" id="vZt-GQ-0GP">
+                                <connections>
+                                    <action selector="saveUser:" destination="0rD-Xs-3HC" id="LTh-6z-Uem"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="camera" id="ZQx-pv-5dR">
+                                <connections>
+                                    <action selector="choosePhoto:" destination="0rD-Xs-3HC" id="i9S-Rn-He2"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="fullNameText" destination="qUA-ky-kFz" id="CyU-bN-YNh"/>
+                        <outlet property="imageView" destination="Yaq-Iu-1x8" id="bfc-rk-mJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9v-jS-P1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1335.2" y="-965.6671664167917"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="sni-x7-toV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="uU8-A4-TYj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rb9-8z-NMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2096" y="-379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2hm-FK-XDz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6N-nq-fA5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="48q-49-NH9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2H9-st-XiQ" kind="relationship" relationship="rootViewController" id="kXf-os-dlU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ajj-TN-Lax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2897" y="-964"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultIcon" width="200" height="200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ksU-34-zuS"/>
+        <segue reference="TNb-d5-nBW"/>
+    </inferredMetricsTieBreakers>
+</document>
